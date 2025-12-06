@@ -18,6 +18,10 @@ interface User {
     hashed_passsword: string;
 }
 
+app.post('/', async (req, res) => {
+    res.send("Hello World");
+})
+
 const USERS: User[] = []
 
 app.post('/register', async (req, res) => {
