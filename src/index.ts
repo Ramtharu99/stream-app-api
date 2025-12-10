@@ -18,7 +18,7 @@ interface User {
     hashed_passsword: string;
 }
 
-app.post('/', async (req, res) => {
+app.get('/', async (req, res) => {
     res.send("Hello World");
 })
 
